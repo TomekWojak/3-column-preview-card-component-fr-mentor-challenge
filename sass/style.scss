@@ -1,0 +1,88 @@
+@use './_colors' as *;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.cards {
+    padding: 6em 2em;
+
+    
+    &__box {
+        width: 100%;
+        max-width: 1200px;
+    }
+    &__card {
+        padding: 3em;
+        box-shadow: 5px 5px 10px #2e2e2e2e;
+
+        &:nth-child(1) {
+            background-color: $orangeColor;
+            border-radius: 8px 8px 0 0;
+        }
+        &:nth-child(2) {
+            background-color: $darkCyan;
+        }
+        &:nth-child(3) {
+            background-color: $veryDarkCyan;
+            border-radius: 0 0 8px 8px;
+        }
+    }
+    &__card-title {
+        margin: .8em 0;
+        font-family: 'Big Shoulders', sans-serif;
+        font-size: 2.8rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $lightGray;
+    }
+    &__card-img {
+        width: 50px;
+    }
+    &__card-text {
+        color: $parahraphColor;
+        line-height: 20px;
+        font-size: 1.3rem;
+    }
+    &__card-btn {
+        margin-block-start: 2em;
+        padding: .8em 2em;
+        border-radius: 30px;
+        border: none;
+        background-color: $lightGray;
+        text-transform: capitalize;
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: background .3s, border .3s, color .3s, transform .3s;
+
+        &:active {
+            transform: scale(.90);
+        }
+        &:hover {
+            background: none;
+            color: $lightGray;
+            border: 2px solid $lightGray;
+        }
+
+        &--orange {
+            color: $orangeColor;
+        }
+        &--darkCyan {
+            color: $darkCyan;
+        }
+        &--veryDarkCyan {
+            color: $veryDarkCyan;
+        }
+    }
+}

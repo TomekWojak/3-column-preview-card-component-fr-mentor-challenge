@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.cards {
+  padding: 6em 2em;
+}
+.cards__box {
+  width: 100%;
+  max-width: 1200px;
+}
+.cards__card {
+  padding: 3em;
+  box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.1803921569);
+}
+.cards__card:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+}
+.cards__card:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.cards__card:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+}
+.cards__card-title {
+  margin: 0.8em 0;
+  font-family: "Big Shoulders", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.cards__card-img {
+  width: 50px;
+}
+.cards__card-text {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 20px;
+  font-size: 1.3rem;
+}
+.cards__card-btn {
+  margin-block-start: 2em;
+  padding: 0.8em 2em;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+  text-transform: capitalize;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s, color 0.3s, transform 0.3s;
+}
+.cards__card-btn:active {
+  transform: scale(0.9);
+}
+.cards__card-btn:hover {
+  background: none;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.cards__card-btn--orange {
+  color: hsl(31, 77%, 52%);
+}
+.cards__card-btn--darkCyan {
+  color: hsl(184, 100%, 22%);
+}
+.cards__card-btn--veryDarkCyan {
+  color: hsl(179, 100%, 13%);
+}/*# sourceMappingURL=style.css.map */
